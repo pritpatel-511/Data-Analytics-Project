@@ -1,0 +1,116 @@
+.user-timeline {
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Centered layout for header and dropdown */
+.timeline-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.user-timeline h2 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Dropdown container */
+.timeline-dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.timeline-dropdown-container label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.timeline-dropdown-container select {
+  padding: 8px 14px;
+  font-size: 15px;
+  width: 280px;
+  border-radius: 6px;
+  border: 1px solid var(--btn-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-dropdown-container select:hover,
+.timeline-dropdown-container select:focus {
+  border-color: var(--btn-hover);
+  box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
+}
+
+/* Timeline entries */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Entry style */
+.timeline-entry {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  color: var(--text-color);
+}
+
+.timeline-icon {
+  font-size: 24px;
+  width: 40px;
+  text-align: center;
+}
+
+.timeline-info p {
+  margin: 0;
+  margin-left: 50px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.timeline-info small {
+  margin-left: 50px;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* CHART SECTION */
+/* Wrap both charts side-by-side */
+.timeline-charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+/* Each chart box */
+.timeline-chart {
+  flex: 1 1 500px;
+  min-width: 350px;
+  max-width: 600px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.timeline-chart h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}

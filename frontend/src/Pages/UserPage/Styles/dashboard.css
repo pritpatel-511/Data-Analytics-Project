@@ -1,0 +1,93 @@
+.dashboard-container {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Welcome Section */
+.welcome-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.welcome-card h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.welcome-card .highlight {
+  color: var(--btn-color);
+  font-weight: 600;
+}
+
+.welcome-card p {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h2 {
+  font-size: 36px;
+  color: var(--btn-color);
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* Start Visualization Section */
+.start-section {
+  margin-top: 20px;
+}
+
+.start-text {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+
+.start-btn {
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: var(--btn-hover);
+}

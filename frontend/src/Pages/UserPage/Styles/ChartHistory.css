@@ -1,0 +1,151 @@
+/* Page container */
+.history-container {
+  padding: 30px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page title */
+.history-container h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Each card block */
+.history-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Flex layout for text + image */
+.history-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* Text section inside the card */
+.text-content {
+  flex: 1;
+}
+
+/* Text styling */
+.history-card p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* Image preview */
+.preview-img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  object-fit: contain;
+}
+
+/* Buttons container */
+.history-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* Common button style */
+.history-actions button {
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.history-actions button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Remove button override */
+.history-actions button:nth-child(3) {
+  background-color: #e53e3e;
+}
+
+.history-actions button:nth-child(3):hover {
+  background-color: #c53030;
+}
+
+/* Fullscreen modal overlay */
+.modal.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal image */
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Modal close button */
+.modal-content button {
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Optional fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

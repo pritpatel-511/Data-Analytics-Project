@@ -1,0 +1,236 @@
+.ai-insight-container {
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.file-input {
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.preview table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-color);
+}
+
+.preview th, .preview td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.generate-btn {
+  background: var(--btn-color);
+  color: var(--bg-color);
+  padding: 8px 14px;
+  border: none;
+  margin-top: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.generate-btn:hover {
+  background: var(--btn-hover);
+}
+
+.chat-box {
+  grid-column: span 2;
+  min-height: 200px;
+}
+
+.chat-box.large {
+  grid-column: span 2;
+  height: 100%;
+  min-height: 150px;
+}
+
+.chat-box input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.chat-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--btn-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.chat-response {
+  margin-top: 15px;
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 5px;
+  max-height: 180px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.scrollable-card {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.stacked-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small-card {
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+.upload-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  margin-bottom: 30px;
+}
+
+.file-input-label {
+  display: flex;
+  padding: 14px 30px;
+  height: 30px;
+  width: 400px;
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 380px 20px auto;
+  margin-top: 50px;
+}
+
+.file-input-label:hover {
+  background-color: var(--btn-hover);
+}
+
+.file-input {
+  display: none;
+}
+
+.uploaded-filename {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* 🔍 Fullscreen Data Modal */
+.fullscreen-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.85); /* dark blur */
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 95%;
+  height: 90%;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.modal-header h3 {
+  font-size: 22px;
+}
+
+.modal-header button {
+  background: var(--btn-color);
+  border: none;
+  color: var(--bg-color);
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-table {
+  overflow: auto;
+  flex: 1;
+}
+
+.modal-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-table th, .modal-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+/* Small Button */
+.expand-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.expand-btn:hover {
+  background-color: var(--btn-hover);
+}

@@ -1,0 +1,21 @@
+/* Default (light theme) */
+:root {
+  --bg-color: #111827;
+  --text-color:#e5e7eb;
+  --card-bg: #1f2937;
+  --btn-color: #6366f1;
+  --btn-hover: #818cf8;/* Button hover effect */
+}
+
+
+/* Dark theme */
+[data-theme='dark'] {
+  --bg-color: #f9fafb;       /* Base page background */
+  --card-bg: #ffffff;        /* Cards, modals, panels */
+  --text-color: #1f2937;     /* Main readable text */
+  --btn-color: #4f46e5;      /* Primary buttons */
+  --btn-hover: #4338ca; 
+}
+
+
+/* #1f2937; */
